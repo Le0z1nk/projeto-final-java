@@ -1,0 +1,11 @@
+package br.com.vainaweb.escolat2.enums;
+
+public enum Curso {
+	SISTEMAS_INFORMACAO,
+	CIENCIA_COMPUTACAO,
+	ENGENHARIA_COMPUTACAO,
+	ENGENHARIA_MECANICA,
+	ARQUEOLOGIA,
+	GEOLOGIA,
+	HISTÓRIA
+}
