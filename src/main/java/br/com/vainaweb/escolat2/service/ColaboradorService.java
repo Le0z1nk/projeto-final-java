@@ -20,12 +20,15 @@ public class ColaboradorService {
 	}
 
 	public String cadastrar(DadosColaborador dados) {
-		// select * from tb_colaboradores WHERE cpf =
-		var existente = repository.findByCpf(dados.cpf());
-
-		var colaborador = new ColaboradorModel(dados.nome(), dados.cpf(), dados.email(), dados.cargo());
-		repository.save(colaborador); // INSERT
-		return "Cadastro feito com sucesso";
+		// select * from tb_colaboradores WHERE cpf = ??
+				var existente = repository.findByCpf(dados.cpf());
+				if (existente.isPresent()) {
+					return "CPF Ja cadastrado";
+				} else {
+					var colaborador = new ColaboradorModel(dados.nome(), dados.cpf(), dados.email(), dados.cargo(), dados.endereco());
+					repository.save(colaborador); // INSERT
+					return "Cadastro feito com sucesso";
+				}
 
 	}
 }
