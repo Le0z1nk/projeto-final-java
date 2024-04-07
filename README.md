@@ -14,3 +14,5 @@ atualização de dados
 
 deletar dados
 ![image](https://github.com/Le0z1nk/projeto-final-java/assets/118185100/211d0e10-83f1-4af7-94e4-da4c1a000ffa)
+
+diagrama de classes uml: https://lucid.app/lucidchart/309f8116-c24d-4d95-8adf-de51ff1876d7/edit?viewport_loc=20%2C-625%2C4267%2C1857%2C0_0&invitationId=inv_73aa6d7a-dab2-40e5-93c2-c36f331f9cb9
